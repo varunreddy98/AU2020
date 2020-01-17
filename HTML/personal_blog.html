@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: red;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+th{height:50px;}
+
+</style>
+</head>
+<body>
+<header>
+  <h2 style="color:#f1f1f1;">Varun Reddy</h2>
+  <p style="margin-right:5px; font-size: 25px;">bachivarunreddy@gmail.com</p>
+  <p style="margin-right:5px; font-size: 25px;">8008447954</p>
+</header>
+
+<section style="height: 600px">
+  <nav>
+    <h3>Skills</h3>
+    <ul style="list-style-type:disc;">
+      <li><h4>Programming:C,c++,Java,Python</h4></li>
+      <li><h4>Web Development:HTML,CSS,Node.js,Django</h4></li>
+      <li><h4>Databases:Oracle sql,Mysql</h4></li>
+      <li><h4>Android Development</h4></li>
+     
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Projects</h1>
+    <table>
+  <tr>
+    <th>Title</th>
+    <th>Technology</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Dr.Visit </td>
+    <td>Android</td>
+    <td>This application regulates the appointments of doctors in an effective way by
+        providing the status of current token number and time left for his
+        appointment in the form of notifications with a background service. It also
+        helps doctors to switch appointments with voice commands.</td>
+  </tr>
+  <tr>
+    <td>
+        Shopify
+    </td>
+    <td>PHP</td>
+    <td>This online fashion store analyses the users and provides them with personalized
+        products. It also has the feature of setting product remainders based on price so
+        that the user will be notified if there is a price drop in the specified range.</td>
+
+  </tr>
+  <tr>
+  <td>Article Seller</td>
+  <td>Django</td>
+  <td>This project helps the students to sell the used articles like drafters, books to other
+    students in need. It provides a platform where students can just get in contact with
+    mails and buy the products.It can be isolated with every college website to provide
+    service to students.</td>
+  </tr>
+
+  <tr>
+  <td>Trip Maker</td>
+  <td>Java</td>
+  <td>“Trip maker” is an application which creates a customized group of people
+    involved in the trip. Each Individual can log in and enter the expenses incurred
+    by him on food, transport, accommodation, etc.In the end, it provides a detailed
+    report of the amount to be paid by each person and to whom it should be paid.</td>
+  </tr>
+
+  <tr>
+      <td>Health Tracker</td>
+      <td>IOT</td>
+      <td>This project helps to track the heart beat and temperature of patients and raise
+        alerts in the form of sms whenever abnormal conditions occur.</td>
+  </tr>
+</table>
+</section>
+</body>
+</html>
