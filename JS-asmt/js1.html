@@ -1,0 +1,47 @@
+<html>
+<head>
+<script>
+var ItemModule = (function () {
+  var item={};
+  return { 
+
+       addItem: function(name) {
+            item['name']=name;
+            return function(price1)
+            {  
+              item['price']=price1;
+                
+            }
+        },
+
+    getItem:function(){
+        return item;
+    }
+  };
+}());
+
+var display= function(msg,name) {
+    console.log(msg+" "+name);
+    console.log(this.name+" "+this.price);
+};
+var addprice=ItemModule.addItem("bread");
+addprice(30);
+var addprice=ItemModule.addItem("butter");
+addprice(100);
+obj=ItemModule.getItem();
+console.log(obj);
+console.log("using call")
+display.call(obj,"Hello","varun");
+console.log("using apply")
+display.apply(obj,['hello','varun']);
+var bound = display.bind(obj); 
+console.log("using bind");
+console.log(bound("hello","varun"));
+</script>
+</head>
+<body>
+  write an example that uses modular pattern and exposes certain methods which implement closure and 
+  execution context is passed in them using call,bind and apply methods
+
+</body>
+</html>

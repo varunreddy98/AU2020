@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+function Vehicle(no_of_tyres,name,id)
+{
+	this.no_of_tyres=no_of_tyres;
+	this.name=name;
+	this.id=id;
+}
+function Truck(no_of_containers,Vehicle)
+{
+	this.__proto__=Vehicle;
+	this.no_of_containers=no_of_containers;
+
+}
+var vehicle=new Vehicle(4,'xyz',55);
+var truck=new Truck(3,vehicle);
+console.log(vehicle);
+console.log(truck);
+</script>
+</head>
+<body>
+	Use new key word to create instances of particular objects and implement inheritance using prototype keyword
+</body>
+</html>
