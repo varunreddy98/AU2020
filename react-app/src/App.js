@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Footer from './Footer'
+import Popup from "reactjs-popup"
 const useStyles = makeStyles(theme => ({
 	root: {
 	  '& > *': {
@@ -20,14 +21,12 @@ const useStyles = makeStyles(theme => ({
 const App = () => {
 
 	const classes = useStyles();
-	// Data
 	const usersData = [
 		
 	]
 
 	const initialFormState = { id: null, name: '', username: '' }
 
-	// Setting state
 	const [ users, setUsers ] = useState(usersData)
 	const [ currentUser, setCurrentUser ] = useState(initialFormState)
 	const [ editing, setEditing ] = useState(false)
@@ -39,7 +38,6 @@ const App = () => {
 		},3000);
 	  },[]);
 
-	// CRUD operations
 	const addUser = user => {
 		user.id = users.length + 1
 		setUsers([ ...users, user ])
@@ -69,40 +67,20 @@ const App = () => {
 	  };
 	return (
 		<div className="App">
-			<ButtonAppBar/>
+			<ButtonAppBar addUser={addUser}/>
 			{
 				  !!users.length?
 			<Fragment>
 			<Container maxWidth="sm">
-			<UserList users={users} editRow={editRow} deleteUser={deleteUser} />
-			</Container>
-					{editing ? (
-							
-							<Container>
-							<Fragment>
-							<h2>Edit user</h2>
-							<EditUser
-								editing={editing}
+			<UserList users={users} editRow={editRow} deleteUser={deleteUser} editing={editing}
 								setEditing={setEditing}
 								currentUser={currentUser}
-								updateUser={updateUser}
-							/>
-							</Fragment>
-							</Container>
-					) : (
-						<Container>
-						<Fragment>
-							<h2>Add user</h2>
-							<AddUser addUser={addUser} />
-						</Fragment>
-						</Container>
-					
-					)}
+								updateUser={updateUser} />
+			</Container>
 			<Footer/>
 			</Fragment>:
 			<p>Loading...</p>
 	    }
-			
 		</div>
 	)
 }
