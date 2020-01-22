@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+C:\Users\root\Desktop\AU2020\SOAP-asmt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3206584419.index
+\crudappClient\src
