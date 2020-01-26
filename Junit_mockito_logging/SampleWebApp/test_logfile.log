@@ -1,0 +1,31 @@
+2020-01-26 18:32:21 INFO  Demo:17 - getting application context file...
+  2020-01-26 18:32:22 INFO  ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2096442d: startup date [Sun Jan 26 18:32:21 IST 2020]; root of context hierarchy
+  2020-01-26 18:32:22 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [applicationContext.xml]
+  2020-01-26 18:37:35 INFO  Demo:17 - getting application context file...
+  2020-01-26 18:37:35 INFO  Demo:18 - getting bean reference...
+  2020-01-26 18:37:35 INFO  Demo:21 - done...
+  2020-01-26 18:40:30 INFO  TestCourse:32 - asserting course name
+  2020-01-26 18:48:08 INFO  Demo:17 - creating the employee object
+  2020-01-26 18:48:08 INFO  Demo:19 - printing the name of employee
+  2020-01-26 18:48:08 INFO  Demo:21 - done...
+  2020-01-26 18:50:06 INFO  Demo:18 - creating the employee object
+  2020-01-26 18:50:06 FATAL Demo:21 - null object
+  2020-01-26 18:50:06 WARN  Demo:22 - warning
+  2020-01-26 18:50:06 INFO  Demo:27 - correct
+  2020-01-26 18:50:06 INFO  Demo:29 - printing the name of employee
+  2020-01-26 18:50:06 INFO  Demo:32 - done...
+  2020-01-26 18:52:29 INFO  TestCourse:40 - asserting course name
+  2020-01-26 18:56:25 INFO  TestCourse:44 - asserting course name
+  2020-01-26 19:02:26 INFO  Demo:25 - correct
+  2020-01-26 19:02:26 INFO  Demo:27 - printing the name of employee
+  2020-01-26 19:02:26 INFO  Demo:30 - done...
+  2020-01-26 19:04:08 INFO  Demo:27 - correct
+  2020-01-26 19:04:57 INFO  Demo:27 - correct
+  2020-01-26 19:06:35 INFO  Demo:27 - correct
+  2020-01-26 19:12:10 INFO  Demo:17 - creating the employee object
+  2020-01-26 19:12:10 FATAL Demo:20 - null object
+  2020-01-26 19:12:10 WARN  Demo:21 - warning
+  2020-01-26 19:12:10 INFO  Demo:26 - correct
+  2020-01-26 19:12:10 INFO  Demo:28 - printing the name of employee
+  2020-01-26 19:12:10 INFO  Demo:31 - done...
+  
