@@ -27,10 +27,11 @@ public class UserAspect {
     }
 
     @Around(value = "execution(* com.accolite.au.web.xmldemo.controller.*.*(..))")
-    public void around(ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();
-        joinPoint.proceed();
+        Object result=joinPoint.proceed();
         long timeTaken = System.currentTimeMillis() - startTime;
         logger.info("Time Taken by {} is {}", joinPoint, timeTaken);
+        return result;
     }
 }
